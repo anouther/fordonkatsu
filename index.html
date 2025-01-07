@@ -1,0 +1,71 @@
+<html>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" /><script src="script.js"></script>
+<body>
+<style>body{background-image: url("bg.jpg");background-repeat: no-repeat;background-size: 100% 100%; font-family: "Bubblegum Sans", serif;, cursive; animation:none;transition:all .3s ease;}</style>
+
+<div id="konten"><div id="foto"><div class="image"><img id="photo" src="pict.jpg" width="200px" height="200px"/></div><span id="sp2"></span></div>
+
+<div id='slider'>
+  <p>Hi &nbsp;<b id="kamu"></b>‎ This is a special gift for you! Tolong dibaca sampai akhir ya :=). Kalau gak dibaca gua bantai habis ini, canda by.</p>
+  <p>For this year, thank you for wanting to be friends with me. Semoga tahun 2025 menjadi lebih baik lagi dari sebelumnya. Dan semoga tahun 2025 pertemanan kita awet terus yo!.</p>
+  <p> You make me feel safe, secure and loved. Semua cerita-ceritaku dan apapun itu yang aku sharing ke kamu, kamu selalu respon I feel like I'm very valued. Terimakasih aja kayanya ga cukup buat kamu 💙.</p>
+    <p>  I love you, kalau ada masalah apapun itu tolong ketuk roomchatku. Aku ga masalah kamu cerita ke aku, Karena aku gamau temenku yang imut ini sedih. Kalau sedih nanti aku juga ikut sedih, terus kalau kamu gamau cerita aku teror kamu pakai sticker cekingku 🤬.</p>
+  <p>Alphaville - Forever Young, artinya masa muda, nostalgia, dan keinginan untuk mempertahankan perasaan awet muda. Nah, kalau bagiku. Keinginan untuk mempertahankan pertemanan aku dan kamu. Mau berterimakasih karena udah jadi temen masa mudaku, karena aku masih muda awokawok :^</p>
+  <p>Aku kayanya orang terberuntung di dunia deh? Soalnya punya temen sebaik dan seimut kamu. I'm really lucky to have met someone like you, kaya? Woi emang ada orang sebaik ini? Ada sih, nyatanya kamu :3</p>
+  <p>Eh, aku mau minta maaf kalau misalkan aku melakukan kesalahan maupun sengaja atau gak sengaja. Tolong kalau misalkan aku gak sengaja nyinggung kalian tegur aku aja oke? Jangan cutoff dulu! Aku gamau unfriend sama kamu 🥺😭🥺</p>
+  <p>This is my hope for you, semoga kamu tambah kaya biar bisa gift aku teleprem setahun awokaowkwk bercanda. Sehat selalu, sukses selalu. Semoga kamu dijauhkan dari marabahaya dan selalu dikelilingi hal positif ya! 🥰</p>
+  <p>Pokoknya tetep jadi temen imup yang aku kenal ini! Jangan berubah kaya bunglon yee, kamu gaakan tergantikan oleh siapapun. Teman kaya kamu tuh ya cuma kamu doang orangnya, hahahdaha </p>
+  <p>Setelah aku ngasih hadiah gini, semoga kita bisa tambah deket ya. Akur dan langgeng terus pertemanan kita, jangan sampai ada masalah hus-hus. Jangan sampai renggang, kalau bisa mah rendang aja yak awkwkw 🙈. Pokoknya yang terbaik buat kita berdua</p>
+<p>Maaf ya cuma bisa ngasih ini sebagai hadiah, aku harap kamu suka 👌6⃣.
+</p>
+  <p>Pencet love ini yaa<label class='lovein' onClick="duar()">&#128158;</label></p>
+</div><div id="contTom"><a class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim</a></div>
+</div>
+<div id="bodyblur"></div>
+
+<script>  
+var a=0,finish;
+finish = "For the new year, may we be kept away from bad things. The prayer that we prayed before was answered, aamiin. Tetap semangat menjalani hidup yang berat ini, karena kalau gak berat bukan hidup namanya. Jangan pernah merasa kesepian, karena ada MilErs imut di sini. #Salamrispek untuk semuanya, be happy terus ya sobat MilErs 🩵💙!";
+
+function play() {
+  var audio = new Audio('Alphaville - Forever young.mp3');
+  audio.play();
+}
+            
+ function bukaWa(){window.location = "https://x.com/i9554 "}
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                allowOutsideClick: false,
+            });
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu!',
+                    input: 'text',
+                    confirmButtonText: 'next',
+                    showCancelButton: false,
+                });                           
+                if(nama){
+                	window.nama = nama;
+                    finish = finish + ", " + nama + "!";    
+                    document.getElementById("kamu").innerHTML = "" + window.nama;
+                    setTimeout(showDiv, 700);play();                      
+                } else {
+                    await swals.fire('Heh! Jangan dikosongin atuh namanya buru isi 😡');
+                    mulai();
+                }
+            }
+            mulai();
+</script>
+</body>
+</html>
